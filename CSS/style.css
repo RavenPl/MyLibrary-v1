@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 .delete {
@@ -12,4 +13,18 @@
 .delete:hover {
     background-color: rgb(207, 24, 94);
     color: white;
+}
+
+.read {
+    cursor: pointer;
+    text-align: center;
+    background-color: #07e707;
+    border-radius: 20px;
+}
+
+.notRead {
+    cursor: pointer;
+    text-align: center;
+    background-color: #e70707;
+    border-radius: 20px;
 }

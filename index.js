@@ -112,6 +112,14 @@ class MyLibrary {
             tdPages.textContent = numberOfPages;
 
             const tdStatus = document.createElement('td');
+            tdStatus.classList.add(isRead ? "read" : "notRead")
+            tdStatus.addEventListener('click', () => {
+
+                myLibrary.myList[id].isRead = !isRead
+                myLibrary.saveToLocal();
+                myLibrary.createLibrary();
+
+            })
             tdStatus.textContent = `${isRead ? 'Read it' : 'Havent read it'}`;
 
             const tdDelete = document.createElement('td');
