@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <link href="./CSS/normalize.css" rel="stylesheet">
+    <link href="./CSS/skeleton.css" rel="stylesheet">
+    <link href="./CSS/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <h1>My library</h1>
+    <form action="" name="">
+        <div class="row">
+
+            <div class="three columns">
+                <label for="title">Title</label>
+                <input id="title" name="title" required type="text">
+            </div>
+            <div class="three columns">
+                <label for="author">Author</label>
+                <input id="author" type="text">
+            </div>
+            <div class="three columns">
+                <label for="pages">Number of pages</label>
+                <input id="pages" min="0" type="number" value="0">
+            </div>
+            <div class="three columns">
+                <label for="status">Status </label>
+                <select id="status">
+                    <option value=''>- choose -</option>
+                    <option value='true'>Read</option>
+                    <option value='false'>Not Read</option>
+                </select>
+
+            </div>
+        </div>
+        <input class="button-primary" id="addBook" type="submit" value="add book">
+    </form>
+
+    <table class="u-full-width" style="margin-top: 10%">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="table">
+
+        </tbody>
+
+    </table>
+
+
+</div>
+
+<script src="index.js" type="module"></script>
+</body>
+</html>
